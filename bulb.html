@@ -1,0 +1,10 @@
+<a-scene embedded arjs>
+  <a-assets>
+    <a-asset-item id="bulb-obj" src="builder-models/LightBulb.obj"></a-asset-item>
+  </a-assets>
+  <a-marker id="bulb-marker" type="pattern" url="builder-markers/pattern-lightbulb.patt">
+    <a-entity id="bulb" obj-model="obj: #bulb-obj;" material="color: white" rotation="0 180 0" position="0 0 0.5" scale="0.15 0.15 0.15">
+    </a-entity>
+  </a-marker>
+  <a-entity camera></a-entity>
+</a-scene>
